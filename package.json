@@ -52,7 +52,7 @@
               "entryPoints": [
                 {
                   "html": "./src/index.html",
-                  "js": "./src/app.tsx",
+                  "js": "./src/App.tsx",
                   "name": "main_window"
                 }
               ]
@@ -79,7 +79,11 @@
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
     "css-loader": "^3.0.0",
     "electron": "7.1.1",
+    "fork-ts-checker-webpack-plugin": "^3.1.0",
     "node-loader": "^0.6.0",
-    "style-loader": "^0.23.1"
+    "prettier": "^1.19.1",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2"
   }
 }
