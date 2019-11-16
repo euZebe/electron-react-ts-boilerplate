@@ -1,6 +1,6 @@
 {
-  "name": "episol-electron-forge",
-  "productName": "episol-electron-forge",
+  "name": "electron-react-typescript-boilerplate",
+  "productName": "electron-react-typescript-boilerplate",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",
@@ -14,7 +14,7 @@
   "keywords": [],
   "author": {
     "name": "euZebe",
-    "email": "euzebe@axiome.me"
+    "github": "https://github.com/euzebe"
   },
   "license": "MIT",
   "config": {
@@ -24,7 +24,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "episol_electron_forge"
+            "name": "Hello-world"
           }
         },
         {
