@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const About = () => {
   const [counter, setCounter] = useState<number>(0);
@@ -9,6 +9,7 @@ const About = () => {
     setCounter(response);
   }
 
+  useEffect(sendMessageToMainProcess, []);
   return (
     <>
       <h1>About</h1>

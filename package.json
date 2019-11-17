@@ -6,6 +6,8 @@
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
+    "test": "jest",
+    "test:watch": "npm test --watch",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
@@ -77,12 +79,15 @@
     "@electron-forge/maker-zip": "6.0.0-beta.45",
     "@electron-forge/plugin-webpack": "6.0.0-beta.45",
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
+    "@types/jest": "^24.0.23",
     "css-loader": "^3.0.0",
     "electron": "7.1.1",
     "fork-ts-checker-webpack-plugin": "^3.1.0",
+    "jest": "^24.9.0",
     "node-loader": "^0.6.0",
     "prettier": "^1.19.1",
     "style-loader": "^0.23.1",
+    "ts-jest": "^24.1.0",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.2"
   }

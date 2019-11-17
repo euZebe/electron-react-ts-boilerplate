@@ -17,7 +17,7 @@ const createWindow = () => {
   mainWindow = new BrowserWindow({
     fullscreen: true,
     webPreferences: {
-      nodeIntegration: true,
+      nodeIntegration: false,
       preload: __dirname + "/preload.js"
     }
   });
