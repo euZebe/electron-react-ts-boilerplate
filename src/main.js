@@ -8,6 +8,8 @@ if (require("electron-squirrel-startup")) {
   app.quit();
 }
 
+const isDevelopment = process.env.NODE_ENV !== 'production';
+
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
@@ -25,8 +27,10 @@ const createWindow = () => {
   // and load the index.html of the app.
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
 
-  // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  if (isDevelopment) {
+    // Open the DevTools.
+    mainWindow.webContents.openDevTools();
+  }
 
   // Emitted when the window is closed.
   mainWindow.on("closed", () => {
